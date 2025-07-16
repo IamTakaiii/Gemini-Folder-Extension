@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Folder Organizer",
+  "version": "1.0",
+  "description": "Adds folders to the Gemini chat interface to organize your conversations.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

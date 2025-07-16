@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+#gemini-folder-container {
+    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#gemini-folder-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-left: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+#gemini-folder-header button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#gemini-folder-header button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.folder-item {
+    padding: 8px 12px;
+    padding-left: 1.5rem;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: #c4c7c5;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.folder-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+}
+
+.folder-name {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.folder-item.drag-over {
+    background-color: rgba(138, 180, 248, 0.3);
+    border: 1px dashed #8ab4f8;
+}
+
+.delete-folder-btn {
+    background: none;
+    border: none;
+    color: #9aa0a6;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0 4px;
+    border-radius: 4px;
+    margin-left: 8px;
+    transition: all 0.2s;
+    border-radius: 30px;
+}
+
+.delete-folder-btn:hover {
+    background-color: rgba(255, 82, 82, 0.2);
+    color: #f28b82;
+}
+
+.active {
+    background-color: rgba(138, 180, 248, 0.2);
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+.all-chats {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
